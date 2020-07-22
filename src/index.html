@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML 5 Slot Machine</title>
+</head>
+<body>
+<div id="slot">
+    <div class="topline">Balance: <span><input type="number" id="balance" value="5000" max="5000" min="1"/></span></div>
+    <div id="reels">
+        <div class="reel"></div>
+        <div class="reel"></div>
+        <div class="reel"></div>
+    </div>
+    <div id="controls">
+        <button type="button" id="spin">SPIN</button>
+    </div>
+</div>
+<div style="color: white">
+    <form id="debug">
+        <h3>DEBUG</h3><br>
+        <input type="radio" id="threeCherryTop" name="debug" value="threeCherryTop">
+        <label for="threeCherryTop">3 CHERRY symbols on top line 2000</label><br>
+
+        <input type="radio" id="threeCherryCenter" name="debug" value="threeCherryCenter">
+        <label for="threeCherryCenter">3 CHERRY symbols on center line 1000</label><br>
+
+        <input type="radio" id="threeCherryBottom" name="debug" value="threeCherryBottom">
+        <label for="threeCherryBottom">3 CHERRY symbols on bottom line 4000</label><br>
+
+        <input type="radio" id="threeSevenCenter" name="debug" value="threeSevenCenter">
+        <label for="threeSevenCenter">3 7 symbols on any line 150</label><br>
+
+        <input type="radio" id="three3xBarBottom" name="debug" value="three3xBarBottom">
+        <label for="three3xBarBottom">3 3xBAR symbols on any line 50</label><br>
+
+        <input type="radio" id="three2xBarBottom" name="debug" value="three2xBarBottom">
+        <label for="three2xBarBottom">3 2xBAR symbols on any line 20</label><br>
+
+        <input type="radio" id="threeBarBottom" name="debug" value="threeBarBottom">
+        <label for="threeBarBottom">3 BAR symbols on any line 10</label><br>
+    </form>
+</div>
+<script
+        crossorigin="anonymous"
+        src="https://polyfill.io/v3/polyfill.min.js?features=default%2CWebAnimations"
+></script>
+</body>
+</html>
